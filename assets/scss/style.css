@@ -1,0 +1,79 @@
+/** @Main scss for (Template/Project Name) @project     - Project Name @author      -  @created_by  - kawsar bin siraj @created_at  -  @modified_by - */
+/* fonts import */
+/* fonts import -END */
+/* reset, root */
+* { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { padding: 0; margin: 0; background-color: #fff; }
+
+:root { --black: #1A1317; --dark: #2D1F28; --yellow: #FD9B07; --pink: #820039; --pink2: #740045; --pink_light: #AF275E; --pink_light2: #FAF2F7; --maroon: #2E011C; --gray: #D6D2D4; --gray2: #EFECEE; --gray_dark: #595357; }
+
+/* reset, root - END */
+@media (min-width: 1400px) { .container { max-width: 1134px; } }
+
+/* helper , base classes */
+.text-clr-black { color: var(--black); }
+
+.text-clr-dark { color: var(--dark); }
+
+.text-clr-yellow { color: var(--yellow); }
+
+.text-clr-pink { color: var(--pink); }
+
+.text-clr-pink2 { color: var(--pink2); }
+
+.text-clr-pink_light { color: var(--pink_light); }
+
+.text-clr-pink_light2 { color: var(--pink_light2); }
+
+.text-clr-maroon { color: var(--maroon); }
+
+.text-clr-gray { color: var(--gray); }
+
+.text-clr-gray2 { color: var(--gray2); }
+
+.text-clr-gray_dark { color: var(--gray_dark); }
+
+.bg-clr-black { background-color: var(--black); }
+
+.bg-clr-dark { background-color: var(--dark); }
+
+.bg-clr-yellow { background-color: var(--yellow); }
+
+.bg-clr-pink { background-color: var(--pink); }
+
+.bg-clr-pink2 { background-color: var(--pink2); }
+
+.bg-clr-pink_light { background-color: var(--pink_light); }
+
+.bg-clr-pink_light2 { background-color: var(--pink_light2); }
+
+.bg-clr-maroon { background-color: var(--maroon); }
+
+.bg-clr-gray { background-color: var(--gray); }
+
+.bg-clr-gray2 { background-color: var(--gray2); }
+
+.bg-clr-gray_dark { background-color: var(--gray_dark); }
+
+.fs-12 { font-size: 12px; line-height: 140%; }
+
+.fs-24 { font-size: 24px; line-height: 130%; }
+
+.fs-30 { font-size: 30px; line-height: 130%; }
+
+.fs-60 { font-size: 60px; line-height: 140%; }
+
+.fw-medium { font-weight: 500; }
+
+.fw-semi-bold { font-weight: 600; }
+
+.box-shadow { -webkit-box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1); box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1); }
+
+.box-shadow2 { -webkit-box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.05); box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.05); }
+
+.radius-10 { border-radius: 10px; }
+
+.radius-16 { border-radius: 16px; }
+
+/* helper , base classes  - END*/
