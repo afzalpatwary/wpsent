@@ -55,10 +55,10 @@
     <!-- Main Coding Start Here -->
 
 
-    <!-- header -->
+    <!-- header-area -->
     <div class="header-area">
         <!-- header-top -->
-        <div class="header-top bg-clr-black d-flex align-items-center justify-content-center gap-4 py-3">
+        <div class="header-top bg-clr-black d-flex align-items-center justify-content-center flex-wrap gap-3 gap-xl-4 py-3 d-none d-md-flex">
             <p class="text-white fs-5 lh-lg mb-0">
                 Exciting offer is waiting for you, Black Friday <b>75% OFF</b>
             </p>
@@ -72,45 +72,17 @@
         <!-- header-top / -->
 
         <!-- header -->
-        <header class="">
+        <header class="header">
             <nav class="navbar navbar-expand-lg position-absolute start-0 end-0">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand d-none d-md-block" href="#">
                         <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                            <li class="nav-item px-lg-3 dropdown">
-                                <a class="nav-link fs-6 fw-medium text-white dropdown-toggle" href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                    Features
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item fs-6 fw-medium text-clr-black" href="#">Features 1</a>
-                                    </li>
-                                    <li><a class="dropdown-item fs-6 fw-medium text-clr-black" href="#">Features 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item px-lg-3">
-                                <a class="nav-link fs-6 fw-medium text-white" aria-current="page" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item px-lg-3">
-                                <a class="nav-link fs-6 fw-medium text-white" href="#">About us</a>
-                            </li>
-                            <li class="nav-item px-lg-3">
-                                <a class="nav-link fs-6 fw-medium text-white" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item px-lg-3">
-                                <a class="nav-link fs-6 fw-medium text-white" href="#">Contact us</a>
-                            </li>
-                        </ul>
-                        <div class="btn-wrap d-flex gap-4">
+                    <div class="mobile-wrap w-100 d-flex align-items-center g-3 justify-content-between d-md-none">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
+                        </a>
+                        <div class="btn-wrap d-flex d-lg-none gap-2 gap-xl-4 ">
                             <div class="btn-to-access d-inline-flex align-items-center rounded-pill">
                                 <a class="nav-link fs-6 fw-medium text-white px-3" href="#">
                                     Login
@@ -120,7 +92,265 @@
                                     Signup
                                 </a>
                             </div>
-                            <a class="btn-maroon-light d-inline-flex align-items-center gap-2 fs-6 fw-medium text-decoration-none rounded-pill h-46 bg-clr-maroon text-white px-4"
+                            <a class="btn-maroon-light d-inline-flex align-items-center gap-2 fs-6 fw-medium text-decoration-none rounded-pill h-46 bg-clr-maroon text-white px-3 px-xl-4"
+                                href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.1335 12.6533H4.8668C4.5868 12.6533 4.27347 12.4333 4.18013 12.1666L1.42013 4.44664C1.0268 3.33997 1.4868 2.99997 2.43347 3.67997L5.03347 5.53997C5.4668 5.83997 5.96013 5.68664 6.1468 5.19997L7.32013 2.0733C7.69347 1.0733 8.31347 1.0733 8.6868 2.0733L9.86013 5.19997C10.0468 5.68664 10.5401 5.83997 10.9668 5.53997L13.4068 3.79997C14.4468 3.0533 14.9468 3.4333 14.5201 4.63997L11.8268 12.18C11.7268 12.4333 11.4135 12.6533 11.1335 12.6533Z"
+                                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4.3335 14.6667H11.6668" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6.3335 9.33331H9.66683" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Get Pro
+                            </a>
+                        </div>
+                        <button class="mobile-toggle-btn border-0 bg-transparent" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.1665 4.16675L15.8332 15.8334" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.16684 15.8334L15.8335 4.16675" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mt-0 mb-lg-0">
+                            <li class="nav-item px-2 px-xl-3 dropdown">
+                                <a class="nav-link fs-6 fw-medium text-white dropdown-toggle" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                    <span class="drop-shape">
+                                        <img src="assets/img/drop-shape.svg" alt="shape" class="img-fluid">
+                                    </span>
+                                    Features
+                                </a>
+                                <ul class="dropdown-menu p-4">
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon1.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Contact Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon2.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Multi Step Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon3.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Conditional Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon4.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Calculation Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon5.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Booking Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon6.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Feedback Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon7.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Admission Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon8.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Quiz Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon9.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Event Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon10.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Loan Application
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon11.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Job Application
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon12.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Volunteer Application
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon13.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Restaurant Reservation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon14.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Newsletter Signup
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon15.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Product Order Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon16.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            WooCommerce Checkout
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon17.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Subscribe Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon18.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Suggestion Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon19.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Patient Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon20.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Support Form
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item fs-6 fw-medium text-clr-black d-flex gap-3 align-items-center radius-16 p-2"
+                                            href="#">
+                                            <span class="sb-menu-icon">
+                                                <img src="assets/img/sub-meni-icon21.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                            Login & Registration
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-2 px-xl-3">
+                                <a class="nav-link fs-6 fw-medium text-white" aria-current="page" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item px-2 px-xl-3">
+                                <a class="nav-link fs-6 fw-medium text-white" href="#">About us</a>
+                            </li>
+                            <li class="nav-item px-2 px-xl-3">
+                                <a class="nav-link fs-6 fw-medium text-white" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item px-2 px-xl-3">
+                                <a class="nav-link fs-6 fw-medium text-white" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                        <div class="btn-wrap d-none d-lg-flex gap-2 gap-xl-4 ">
+                            <div class="btn-to-access d-inline-flex align-items-center rounded-pill">
+                                <a class="nav-link fs-6 fw-medium text-white px-3" href="#">
+                                    Login
+                                </a>
+                                <div class="divider"></div>
+                                <a class="nav-link fs-6 fw-medium text-white px-3" href="#">
+                                    Signup
+                                </a>
+                            </div>
+                            <a class="btn-maroon-light d-inline-flex align-items-center gap-2 fs-6 fw-medium text-decoration-none rounded-pill h-46 bg-clr-maroon text-white px-3 px-xl-4"
                                 href="#">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -140,8 +370,24 @@
             </nav>
         </header>
         <!-- header / -->
+
+
+        <!-- mobile-menu -->
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
+        <!-- mobile-menu / -->
+
     </div>
-    <!--/ header -->
+    <!--/ header-area -->
 
 
 
@@ -1766,7 +2012,8 @@
                                 </a>
                             </li>
                             <li class="mb-0">
-                                <a href="mailto:contact@wpsent.com" class="f-menu-text fs-6 fw-medium text-clr-gray text-decoration-none d-flex gap-3">
+                                <a href="mailto:contact@wpsent.com"
+                                    class="f-menu-text fs-6 fw-medium text-clr-gray text-decoration-none d-flex gap-3">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
